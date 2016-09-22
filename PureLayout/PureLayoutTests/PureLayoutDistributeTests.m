@@ -139,8 +139,8 @@
 {
     ALView *previousView = nil;
     for (ALView *view in views) {
-        PL_ALAssertOriginXEquals(view, CGRectGetMaxX(previousView.frame) + spacing);
-        PL_ALAssertWidthEquals(view, width);
+        ALAssertOriginXEquals(view, CGRectGetMaxX(previousView.frame) + spacing);
+        ALAssertWidthEquals(view, width);
         previousView = view;
     }
 }
@@ -154,8 +154,8 @@
     
     ALView *previousView = nil;
     for (ALView *view in views) {
-        PL_ALAssertOriginYEquals(view, CGRectGetMaxY(previousView.frame) + spacing);
-        PL_ALAssertHeightEquals(view, height);
+        ALAssertOriginYEquals(view, CGRectGetMaxY(previousView.frame) + spacing);
+        ALAssertHeightEquals(view, height);
         previousView = view;
     }
 }
